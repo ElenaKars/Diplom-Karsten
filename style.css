@@ -733,6 +733,7 @@ form {
     box-sizing: border-box;
 }
 .popup-container {
+    display: none;
     background-color: white;
     position: relative;
     max-width: 400px;
@@ -892,6 +893,9 @@ form {
         position: relative;
         text-indent: -9999px;
         cursor: pointer;
+        position: absolute;
+        right: 0;
+        margin-right: 35px;
     }
     .menu_button:before {
         top: 0;
