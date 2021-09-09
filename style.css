@@ -896,6 +896,8 @@ form {
         position: absolute;
         right: 0;
         margin-right: 35px;
+        border: none;
+        background-color: transparent;
     }
     .menu_button:before {
         top: 0;
@@ -919,6 +921,7 @@ form {
         position: absolute;
         left: 0;
         top: 50%;
+        color: transparent;
     }
     .trends {
         display: flex;
