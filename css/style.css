@@ -524,7 +524,6 @@ form {
 .products {
     display: flex;
     font-size: 15px;
-    height: 440px;
 }
 .product {
      margin-left: 5em;
@@ -797,8 +796,8 @@ form {
     -moz-appearance: none;
     background-image: url(../svg/form-arrows.svg);
     background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
+    background-position: 94% center;
+    background-size: 14px;
 }
 
 
@@ -876,7 +875,7 @@ form {
     right: 0;
 }
 
-@media (min-width: 641px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
     .menu-list {
         display: none;
     }
@@ -923,6 +922,11 @@ form {
         top: 50%;
         color: transparent;
     }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header {
+        background-image: url(../images/banner-bg-tablet.jpg);
+    }
     .trends {
         display: flex;
         flex-wrap: wrap;
@@ -964,7 +968,7 @@ form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0 4.5%;
+        margin: auto;
     }
     .product {
         flex-basis: 44%;
@@ -976,13 +980,39 @@ form {
     }
     .footer {
         max-width: 690px;
-        margin-right: 4.5%;
-        margin-left: 4.5%;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
     }
     .footer-socials {
         padding: 0;
     }
 }
 @media (min-width: 360px) and (max-width: 767px) {
+    .header {
+        background-image: url(../images/banner-mobile.jpg);
+    }
+    .wrapper {
+        display: ;
+    }
+    .trends {
+        display: block;
+    }
+    .main {
+        width: 100%;
+        display: block;
+    }
+    .post {
+        flex-direction: column;
+    }
+    .footer {
+        width: 100%;
+    }
+    .products {
+        display: block;
+    } 
+    .product {
+        margin: 0;
+    }
 
 }
