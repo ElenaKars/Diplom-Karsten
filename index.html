@@ -54,7 +54,7 @@
     <h2 class="trends-header-title">Сейчас в тренде</h2>
 </div>
 <div class="trends">
-    <article class="trend">
+    <article class="trend" id="trend-inner">
         <div class="trends-image">
             <img src="images/trend1.jpg" class="trend-img" alt="Сад на подоконнике">
         </div>    
@@ -75,7 +75,7 @@
             </div>
         </div>
     </article>
-    <article class="trend">
+    <article class="trend" id="trend-inner">
         <div class="trends-image">
             <img src="images/trend2.jpg" class="trend-img" alt="сыры">
         </div>
@@ -93,7 +93,7 @@
             </div>
         </div>
     </article>
-    <article class="trend">
+    <article class="trend" id="trend-inner">
         <div class="trends-image">
             <img src="images/trend3.jpg" class="trend-img" alt="ПЕРВЫЙ ПОХОД В ГОРЫ">
         </div>
@@ -114,7 +114,7 @@
             </div>
         </div>
     </article>
-    <article class="trend">
+    <article class="trend" id="trend-inner">
         <div class="trends-image">
             <img src="images/trend4.jpg" class="trend-img" alt="сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ">
         </div>
@@ -225,6 +225,7 @@
                 </div>
                 <div class="post-content">
                     <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
+                    
                     <br>Мы составили список лучших летних фестивалей по всему миру.
                 </div>
             </div>
@@ -364,7 +365,7 @@
 
             <section>
                 <div class="side-header">
-                    <h3>Рассылка</h3>
+                    <h3 class="side-header-title">Рассылка</h3>
                 </div>
                 <form class="form-group">
                     <label>
@@ -457,7 +458,11 @@
         <div class="products">
             <article class="product">
                 <div class="product-image">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/shop-item-tablet1.jpg">
+                        <source media="(min-width: 465px)" srcset="images/shop-item-mobile1.jpg">
                     <img src="images/shop-item-desk1.jpg" class="product-img" alt="Подушки на диван">
+                    </picture>
                 </div>
                 <div class="product-body">
                     <div class="product-content">
@@ -477,7 +482,9 @@
                             <span class="product__rub">₽</span>
                           </span>
                         </div>
-                <button class="product-button" type="button">В магазин</button>
+                <button class="product-button" type="button">
+                    <a href="#0" class="product-button-link">В магазин</a>
+                </button>
                     </footer>
                 </div>
             </article>
@@ -500,7 +507,9 @@
                             <span class="product__rub">₽</span>
                           </span>
                         </div>
-                <button class="product-button" type="button">В магазин</button>
+                <button class="product-button" type="button">
+                    <a href="#0" class="product-button-link">В магазин</a>
+                </button>
                     </footer>
                 </div>
             </article>
@@ -527,7 +536,9 @@
                             <span class="product__rub">₽</span>
                           </span>
                         </div>
-                <button class="product-button" type="button">В магазин</button>
+                <button class="product-button" type="button">
+                    <a href="#0" class="product-button-link">В магазин</a>
+                </button>
                     </footer>
                 </div>
             </article>
