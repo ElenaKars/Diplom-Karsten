@@ -111,7 +111,8 @@ h1, h2, h3 {
     margin: 0;
     font-family: OpenSans, sans-serif;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 4.5rem;
+    
     line-height: 1.6;
     text-align: center;
     color: #ffffff;
@@ -195,7 +196,7 @@ h1, h2, h3 {
 }
 .trends-title {
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 20px;
     color: #fff;
     font-weight: 530;
     line-height: 1.2;
@@ -611,6 +612,7 @@ form {
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 28px;
+    margin-bottom: 25px;
 }
 .product-content {
     line-height: 1.4;
@@ -620,6 +622,9 @@ form {
     height: 45px;
     background-color: #b59f5b;
     border: none;
+}
+.product-button-link {
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     color: #ffffff;
@@ -876,6 +881,9 @@ form {
 }
 
 @media (max-width: 1199px) {
+    html {
+        font-size: 10px;
+    }
     .menu-list {
         display: none;
     }
@@ -922,8 +930,32 @@ form {
         top: 50%;
         color: transparent;
     }
+    .trends-title {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .trends-info {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .post-img {
+        max-width: 100%;
+        width: 370px;
+    }
+    .post-info {
+        margin: 0;
+        margin-top: 15px;
+        padding: 0;
+        max-width: 100%;
+    }
+    .post-content {
+        max-width: 100%;
+    }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+    html {
+        font-size: 9px;
+    }
     .header {
         background-image: url(../images/banner-bg-tablet.jpg);
     }
@@ -989,21 +1021,64 @@ form {
     }
 }
 @media (min-width: 360px) and (max-width: 767px) {
+    html {
+        font-size: 6px;
+    }
     .header {
         background-image: url(../images/banner-mobile.jpg);
     }
+    .header__inner {
+        flex-direction: column-reverse;
+    }
+    .noemi-logo {
+        padding-top: 220px;
+        width: 270px;
+    }
+    .title {
+        padding: 85px 45px;
+    }
     .wrapper {
-        display: ;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .trends {
         display: block;
     }
+    #trend-inner {
+        margin-left: 0;
+    }
+    .trend:nth-of-type(n+2) {
+        margin-top: 3px;
+    }
     .main {
-        width: 100%;
+        max-width: 100%;
         display: block;
+    }
+    .posts {
+        padding: 0;
     }
     .post {
         flex-direction: column;
+    }
+    .side-bar {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .side-header-title::after {
+        margin-bottom: 25px;
+    }    
+    .new-post-inner {
+        line-height: 1.4;
+    }
+    .tags-chart {
+        font-size: 12px;
+    }
+    .tag-chart-item {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .tag-chart-link {
+        padding: 8px 13px; 
     }
     .footer {
         width: 100%;
@@ -1013,6 +1088,6 @@ form {
     } 
     .product {
         margin: 0;
+        margin-bottom: 25px;
     }
-
 }
