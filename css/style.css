@@ -782,6 +782,7 @@ form {
 .group-label {
     display: block;
     padding-bottom: 10px;
+    font-size: 14px;
 }
 .select {
     display: block;
@@ -1089,5 +1090,8 @@ form {
     .product {
         margin: 0;
         margin-bottom: 25px;
+    }
+    .popup__close {
+        font-size: 18px;
     }
 }
