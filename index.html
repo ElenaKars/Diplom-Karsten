@@ -459,8 +459,9 @@
             <article class="product">
                 <div class="product-image">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="images/shop-item-tablet1.jpg">
-                        <source media="(min-width: 465px)" srcset="images/shop-item-mobile1.jpg">
+                        <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+                        <source srcset="images/shop-item-desk1">
                     <img src="images/shop-item-desk1.jpg" class="product-img" alt="Подушки на диван">
                     </picture>
                 </div>
@@ -547,7 +548,7 @@
 </div>
 </div>
 <footer class="footer">
-    <div class="footer-socials">
+    <address class="footer-socials">
         <ul class="socials">
             <li class="socials-item">
                 <a href="#0" class="socials-link socials-link__twitter"><span class="socials-link-text">Профиль компании в Твиттере</span></a>
@@ -563,7 +564,7 @@
             <li class="socials-item"><a href="#0" class="socials-link socials-link__tumblr"><span class="socials-link-text">Профиль компании в Тамблере</span></a>
             </li>
         </ul>
-    </div>
+    </address>
     <div class="copyright-inner">
   <span class="copyright"><a href="#0" class="copyright-link">Copyright © 2009–2019 City Blog LLC.</a>
   </span>
