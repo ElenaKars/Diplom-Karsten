@@ -221,12 +221,14 @@ h1, h2, h3 {
 .trends-list-item:nth-child(n+2) {
     margin-left: 15px;
 }
+
+.wrapper {
+    margin: 60px auto;
+    max-width: 1200px;
+}
 /*posts=======================================================*/
 .posts {
-    margin-top: 70px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1200px;
+    
     padding: 0 15px;
     display: flex;
     flex-wrap: wrap;
@@ -545,7 +547,7 @@ form {
 
 .product-img {
     width: 100%;
-    height: 200px;
+    /*height: 200px;*/
 }
 .product-description {
     font-family: OpenSans;
@@ -940,6 +942,9 @@ form {
         margin-right: 15px;
         margin-left: 15px;
     }
+    .wrapper {
+        margin: 45px auto;
+    }
     .post-img {
         max-width: 100%;
         width: 370px;
@@ -952,6 +957,9 @@ form {
     }
     .post-content {
         max-width: 100%;
+    }
+    .product-img {
+        object-fit: cover;
     }
 }
 @media (min-width: 641px) and (max-width: 1199px) {
