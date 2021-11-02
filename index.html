@@ -593,14 +593,16 @@
 
     <form class="feedback-form">
     
-    <div class="form-group">
-      <label class="select-group">
+    <form class="form-group">
+        <div class="select-group">
         <span class="group-label">Как часто вы заходите на сайт?</span>
-        <select class="select">
-          <option class="option" selected>Почти каждый день</option>
-        </select>
-      </label>
-    </div>
+        <div class="select">Почти каждый день</div>
+            <div class="select__content">
+            <input class="option" id="singleOption0" type="radio" name="singleOption" checked />
+            <label for="singleSelect0" class="select-label">Почти каждый день</label>
+            </div>
+        </div>
+    </form>
 
     <div class="form-group">
         <span class="group-label">Вы подписаны на e-mail рассылку?</span>
@@ -622,7 +624,7 @@
     </div>
 
     <div class="form-group">
-        <button class="send-button" type="button">Отправить</button>
+        <button class="send-button" type="submit">Отправить</button>
     </div>
 
     </form>
