@@ -112,7 +112,7 @@ h1, h2, h3 {
     margin: 0;
     font-family: OpenSans, sans-serif;
     font-weight: bold;
-    font-size: 4.5rem;
+    font-size: 2.8rem;
     
     line-height: 1.6;
     text-align: center;
@@ -728,7 +728,6 @@ form {
     height: 100vh;
     font-family: OpenSans;
     display: flex;
-    font-family: 14px;
     top: 0;
     left: 0;
     position: fixed;
@@ -744,11 +743,12 @@ form {
     background-color: white;
     position: relative;
     max-width: 400px;
-    width: 95%;
+    width: 90%;
     margin: auto;
+    padding-top: 30px;
 }
 .feedback {
-    padding: 50px 30px;
+    padding: 0 30px;
 }
 .feedback-header {
     /*font-size: 20px;
@@ -782,6 +782,20 @@ form {
 .form-group:last-child {
     margin-top: 20px;
 }
+.select {
+    padding: 15px;
+}
+.select-label {
+    font-size: 12px;
+    padding: 6px 16px;
+    display: flex;
+}
+.option {
+    display: none;
+}
+.option:checked {
+    background-color: #dedede;
+}
 .group-label {
     display: block;
     padding-bottom: 10px;
@@ -809,7 +823,37 @@ form {
     background-size: 14px;
 }
 
+.select__content::before {
+    content: "";
 
+    position: absolute;
+    top: 50%;
+    right: 16px;
+
+    display: block;
+    width: 10px;
+    height: 2px;
+
+    transition: all 0.3s ease-out;
+
+    background-color: #333333;
+
+}
+
+.select-label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    max-height: 0;
+    padding: 0 16px;
+    
+    transition: all 0.2s ease-out;
+  
+    cursor: pointer;
+    
+    overflow: hidden;
+}
 .radio-group-text::before {
     content: "";
     display: inline-block;
@@ -853,7 +897,7 @@ form {
     width: 100%;
     height: 50px;
     margin-top: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     background-color: #b59f5b;
     border: none;
     text-transform: uppercase;
@@ -1112,5 +1156,8 @@ form {
     }
     .popup__close {
         font-size: 18px;
+    }
+    .popup_hidden {
+        padding: 50px 0;
     }
 }
